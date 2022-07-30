@@ -5,9 +5,21 @@ $(document).ready(function () {
         appendDots: '.sliderDots',
         dotsClass: 'dots',
 
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 4000,
-
     });
 
+    // Doing Responsive from here
+    let hamburger = document.querySelector('.hamburger');
+    let times = document.querySelector('.times');
+    let mobileNav = document.querySelector('.mobileNav');
+
+    hamburger.addEventListener('click', function () {
+        mobileNav.classList.add('open');
+    });
+
+    times.addEventListener('click', function () {
+        mobileNav.classList.remove('open');
+    });
 });
+

@@ -11,245 +11,404 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/dc5223bef3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <nav class="flex items-center justify-between ">
-                <div class="left flex items-center">
-                    <div class="branding">
-                        <img src="img/logo.svg" alt="">
-                    </div>
+    <div class="siteMainWrapper">
+        <button class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </button>
 
-                    <div>
-                        <a href="">Home</a>
-                        <a href="">About</a>
-                        <a href="">Services</a>
-                        <a href="">Pages</a>
-                        <a href="">Blog</a>
-                    </div>
-                </div>
-
-                <div class="right">
-                    <button class="btn btn-primary">Contact</button>
-                </div>
-            </nav>
-            <div class="hero flex items-center justify-between">
-                <div class="left flex-1 flex justify-center">
-                    <img src="myFiles/MyImage4.png" alt="">
-                </div>
-                <div class="right flex-1">
-                    <h6>Anand Jaiswar</h6>
-                    <h1>I'm a Creative <span>Designer</span></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo labore ipsam tempora
-                        obcaecati reprehenderit, a, unde provident excepturi magni facilis id culpa fugiat blanditiis
-                        dolores consequuntur quam quod quaerat! Perspiciatis.</p>
-                    <div>
-                        <button class="btn btn-secondary">DOWNLOAD CV</button>
-                    </div>
-                </div>
-            </div>
+        <div class="mobileNav">
+            <button class="times"><i class="fa-solid fa-xmark"></i></button>
+            <ul>
+                <li><img src="img/logo.svg" alt=""></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#Works">Works</a></li>
+                <li><a href="#Blog">Blog</a></li>
+                <li><button class="btn btn-primary" style="color: black;">Contact</button></li>
+            </ul>
         </div>
-    </header>
 
-    <section class="about">
-        <div class="container flex items-center">
-            <div class="flex-1 justify-center flex">
-                <img class="about-image" src="img/man-2.png" alt="">
+        <header>
+            <div class="container">
+                <nav id="mainNav" class="flex items-center justify-between ">
+                    <div class="left flex items-center">
+                        <div class="branding">
+                            <img src="img/logo.svg" alt="">
+                        </div>
+
+                        <div>
+                            <a href="#">Home</a>
+                            <a href="#about">About</a>
+                            <a href="#Services">Services</a>
+                            <a href="#Works">Works</a>
+                            <a href="#Blog">Blog</a>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <button class="btn btn-primary">Contact</button>
+                    </div>
+                </nav>
+                <div class="hero flex items-center justify-between">
+                    <div class="left flex-1 flex justify-center">
+                        <img src="myFiles/MyImage4.png" alt="">
+                    </div>
+                    <div class="right flex-1">
+                        <h6>Anand Jaiswar</h6>
+                        <h1>I'm a Creative <span>Designer</span></h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo labore ipsam tempora
+                            obcaecati reprehenderit, a, unde provident excepturi magni facilis id culpa fugiat
+                            blanditiis
+                            dolores consequuntur quam quod quaerat! Perspiciatis.</p>
+                        <div>
+                            <button class="btn btn-secondary">DOWNLOAD CV</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="flex-1">
-                <h1>About <span>Me</span></h1>
-                <h3>Hello I'm Anand Jaiswar</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ratione labore iste ea, perferendis
-                    officiis illo suscipit, asperiores quisquam nihil, natus iure molestias temporibus fuga excepturi
-                    placeat doloribus consequatur eveniet!
+        </header>
+
+        <section id="about" class="about">
+            <div class="container flex items-center">
+                <div class="flex-1 justify-center flex">
+                    <img class="about-image" src="img/man-2.png" alt="">
+                </div>
+                <div class="flex-1">
+                    <h1>About <span>Me</span></h1>
+                    <h3>Hello I'm Anand Jaiswar</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod ratione labore iste ea, perferendis
+                        officiis illo suscipit, asperiores quisquam nihil, natus iure molestias temporibus fuga
+                        excepturi
+                        placeat doloribus consequatur eveniet!
 
 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim rerum sapiente obcaecati a! Eum
-                    delectus quae harum sit repellendus tempore debitis expedita quas, optio soluta a modi id nesciunt
-                    quisquam.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim rerum sapiente obcaecati a! Eum
+                        delectus quae harum sit repellendus tempore debitis expedita quas, optio soluta a modi id
+                        nesciunt
+                        quisquam.
+                    </p>
+
+                    <div class="social">
+                        <a href="#" target="_blank" title="Website"><i class="fa-solid fa-code"></i></a>
+                        <a href="#" target="_blank" title="Linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" target="_blank" title="Github"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Services" class="services">
+            <div class="container">
+                <h1 class="sectionHeading"><span>Our</span> Services</h1>
+                <p>we pro .............................../...................ffffffffffff.</p>
+                <div class="cardWrapper">
+                    <div class="card">
+                        <i class="fa-solid fa-paintbrush"></i>
+                        <h2>Graphic Design</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta expedita voluptate perferendis
+                            delectus quisquam praesentium ad exercitationem. Pariatur nemo maiores odit numquam libero
+                            sequi
+                            soluta sapiente. Ad exercitationem eius excepturi.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Development</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta expedita voluptate perferendis
+                            delectus quisquam praesentium ad exercitationem. Pariatur nemo maiores odit numquam libero
+                            sequi
+                            soluta sapiente. Ad exercitationem eius excepturi.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-atom"></i>
+                        <h2>Data Science</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta expedita voluptate perferendis
+                            delectus quisquam praesentium ad exercitationem. Pariatur nemo maiores odit numquam libero
+                            sequi
+                            soluta sapiente. Ad exercitationem eius excepturi.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-database"></i>
+                        <h2>SQL Databases</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta expedita voluptate perferendis
+                            delectus quisquam praesentium ad exercitationem. Pariatur nemo maiores odit numquam libero
+                            sequi
+                            soluta sapiente. Ad exercitationem eius excepturi.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-brands fa-python"></i>
+                        <h2>Python Projects</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta expedita voluptate perferendis
+                            delectus quisquam praesentium ad exercitationem. Pariatur nemo maiores odit numquam libero
+                            sequi
+                            soluta sapiente. Ad exercitationem eius excepturi.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <h2>Android Development</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta expedita voluptate perferendis
+                            delectus quisquam praesentium ad exercitationem. Pariatur nemo maiores odit numquam libero
+                            sequi
+                            soluta sapiente. Ad exercitationem eius excepturi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="freeLancer">
+            <h1>I am available for Free-lancing</h1>
+            <p>We provide high standard clean website for your business solution</p>
+            <button class="btn btn-primary">Download CV</button>
+        </section>
+
+        <section class="reviews">
+            <div class="container">
+                <h1 class="sectionHeading"><span>Our</span> Client</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis fugit fuga delectus eum nulla
+                    minima!
+                    Sint sequi iusto rerum deleniti enim alias. Molestiae possimus in exercitationem iste magni, at
+                    amet!
                 </p>
+                <div class="slider">
 
-                <div class="social">
-                    <a href="#" target="_blank" title="Website"><i class="fa-solid fa-code"></i></a>
-                    <a href="#" target="_blank" title="Linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
-                    <a href="#" target="_blank" title="Github"><i class="fa-brands fa-github"></i></a>
-                    <a href="#" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href="#" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <div class="slide">
+                        <img src="img/lady.png" alt="">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, natus non. Saepe, quae.
+                            Nihil
+                            maiores minus nesciunt aut quia totam expedita praesentium, eius ipsa magni non eveniet,
+                            dignissimos quod nisi.</p>
+                        <span>Name, company ABC</span>
+                    </div>
+                    <div class="slide">
+                        <img src="img/lady.png" alt="">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, natus non. Saepe, quae.
+                            Nihil
+                            maiores minus nesciunt aut quia totam expedita praesentium, eius ipsa magni non eveniet,
+                            dignissimos quod nisi.</p>
+                        <span>Name, company ABC</span>
+                    </div>
+                    <div class="slide">
+                        <img src="img/lady.png" alt="">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, natus non. Saepe, quae.
+                            Nihil
+                            maiores minus nesciunt aut quia totam expedita praesentium, eius ipsa magni non eveniet,
+                            dignissimos quod nisi.</p>
+                        <span>Name, company ABC</span>
+                    </div>
+                    <div class="slide">
+                        <img src="img/lady.png" alt="">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, natus non. Saepe, quae.
+                            Nihil
+                            maiores minus nesciunt aut quia totam expedita praesentium, eius ipsa magni non eveniet,
+                            dignissimos quod nisi.</p>
+                        <span>Name, company ABC</span>
+                    </div>
+                    <div class="slide">
+                        <img src="img/lady.png" alt="">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, natus non. Saepe, quae.
+                            Nihil
+                            maiores minus nesciunt aut quia totam expedita praesentium, eius ipsa magni non eveniet,
+                            dignissimos quod nisi.</p>
+                        <span>Name, company ABC</span>
+                    </div>
+
+                </div>
+                <div class="sliderDots"></div>
+            </div>
+        </section>
+
+        <section id="Works" class="work">
+            <div class="container">
+                <h1 class="sectionHeading"><span>Our</span> Works</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis similique ab veniam nostrum
+                    possimus sequi dolorum ullam excepturi, modi vel. Facere non commodi fugit ratione at debitis culpa
+                    illum. Impedit?</p>
+
+
+                <div class="cardWrapper">
+                    <div class="card">
+                        <div class="overlay">
+                            <span>Category</span>
+                            <a href="" target="_blank" rel="noopener noreferrer">Name Of Project</a>
+                        </div>
+                        <img src="img/ph-1.png" alt="">
+                    </div>
+                    <div class="card">
+                        <div class="overlay">
+                            <span>Category</span>
+                            <a href="" target="_blank" rel="noopener noreferrer">Name Of Project</a>
+                        </div>
+                        <img src="img/ph-1.png" alt="">
+                    </div>
+                    <div class="card">
+                        <div class="overlay">
+                            <span>Category</span>
+                            <a href="" target="_blank" rel="noopener noreferrer">Name Of Project</a>
+                        </div>
+                        <img src="img/ph-1.png" alt="">
+                    </div>
+                    <div class="card">
+                        <div class="overlay">
+                            <span>Category</span>
+                            <a href="" target="_blank" rel="noopener noreferrer">Name Of Project</a>
+                        </div>
+                        <img src="img/ph-1.png" alt="">
+                    </div>
+                    <div class="card">
+                        <div class="overlay">
+                            <span>Category</span>
+                            <a href="" target="_blank" rel="noopener noreferrer">Name Of Project</a>
+                        </div>
+                        <img src="img/ph-1.png" alt="">
+                    </div>
+                    <div class="card">
+                        <div class="overlay">
+                            <span>Category</span>
+                            <a href="" target="_blank" rel="noopener noreferrer">Name Of Project</a>
+                        </div>
+                        <img src="img/ph-1.png" alt="">
+                    </div>
+
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="services">
-        <div class="container">
-            <h1 class="sectionHeading"><span>Our</span> Services</h1>
-            <p>we pro .............................../...................ffffffffffff.</p>
-            <div class="cardWrapper">
-                <div class="card">
-                    <i class="fa-solid fa-paintbrush"></i>
-                    <h2>Graphic Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta expedita voluptate perferendis
-                        delectus quisquam praesentium ad exercitationem. Pariatur nemo maiores odit numquam libero sequi
-                        soluta sapiente. Ad exercitationem eius excepturi.</p>
-                </div>
-                <div class="card">
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Development</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta expedita voluptate perferendis
-                        delectus quisquam praesentium ad exercitationem. Pariatur nemo maiores odit numquam libero sequi
-                        soluta sapiente. Ad exercitationem eius excepturi.</p>
-                </div>
-                <div class="card">
-                    <i class="fa-solid fa-atom"></i>
-                    <h2>Data Science</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta expedita voluptate perferendis
-                        delectus quisquam praesentium ad exercitationem. Pariatur nemo maiores odit numquam libero sequi
-                        soluta sapiente. Ad exercitationem eius excepturi.</p>
-                </div>
-                <div class="card">
-                    <i class="fa-solid fa-database"></i>
-                    <h2>SQL Databases</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta expedita voluptate perferendis
-                        delectus quisquam praesentium ad exercitationem. Pariatur nemo maiores odit numquam libero sequi
-                        soluta sapiente. Ad exercitationem eius excepturi.</p>
-                </div>
-                <div class="card">
-                    <i class="fa-brands fa-python"></i>
-                    <h2>Python Projects</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta expedita voluptate perferendis
-                        delectus quisquam praesentium ad exercitationem. Pariatur nemo maiores odit numquam libero sequi
-                        soluta sapiente. Ad exercitationem eius excepturi.</p>
-                </div>
-                <div class="card">
-                    <i class="fa-solid fa-mobile-screen-button"></i>
-                    <h2>Android Development</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta expedita voluptate perferendis
-                        delectus quisquam praesentium ad exercitationem. Pariatur nemo maiores odit numquam libero sequi
-                        soluta sapiente. Ad exercitationem eius excepturi.</p>
+        <section id="Blog" class="blog">
+            <div class="container">
+                <h1 class="sectionHeading"><span>Our</span> Blog</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia nihil ullam illo culpa dolorem,
+                    fugiat
+                    libero quas aliquam pariatur, aperiam maiores magni sunt vero beatae dolorum corrupti expedita unde.
+                    Maiores.</p>
+                <div class="cardWrapper">
+                    <div class="card">
+                        <div class="imgWrapper">
+                            <img src="img/article-ph-1.png" alt="">
+                        </div>
+                        <div class="cardContent">
+                            <a href="" target="_blank" rel="noopener noreferrer">
+                                <h1>Title of Blog</h1>
+                            </a>
+
+                            <span>Date Here</span>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi a nesciunt cum maiores
+                                officiis, iure modi voluptates sed consectetur, deleniti in. Voluptas consequatur
+                                impedit
+                                cupiditate, fugit consectetur suscipit nobis. Consequuntur.</p>
+
+                            <a href="http://" target="_blank" rel="noopener noreferrer" class="readMore">Read More</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="imgWrapper">
+                            <img src="img/article-ph-1.png" alt="">
+                        </div>
+                        <div class="cardContent">
+                            <a href="" target="_blank" rel="noopener noreferrer">
+                                <h1>Title of Blog</h1>
+                            </a>
+
+                            <span>Date Here</span>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi a nesciunt cum maiores
+                                officiis, iure modi voluptates sed consectetur, deleniti in. Voluptas consequatur
+                                impedit
+                                cupiditate, fugit consectetur suscipit nobis. Consequuntur.</p>
+
+                            <a href="http://" target="_blank" rel="noopener noreferrer" class="readMore">Read More</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="imgWrapper">
+                            <img src="img/article-ph-1.png" alt="">
+                        </div>
+                        <div class="cardContent">
+                            <a href="" target="_blank" rel="noopener noreferrer">
+                                <h1>Title of Blog</h1>
+                            </a>
+
+                            <span>Date Here</span>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi a nesciunt cum maiores
+                                officiis, iure modi voluptates sed consectetur, deleniti in. Voluptas consequatur
+                                impedit
+                                cupiditate, fugit consectetur suscipit nobis. Consequuntur.</p>
+
+                            <a href="http://" target="_blank" rel="noopener noreferrer" class="readMore">Read More</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="freeLancer">
-        <h1>I am available for Free-lancing</h1>
-        <p>We provide high standard clean website for your business solution</p>
-        <button class="btn btn-primary">Download CV</button>
-    </section>
+        <section class="contact">
+            <div class="container">
+                <h1 class="sectionHeading">Contact <span>Us</span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia nihil ullam illo culpa dolorem,
+                    fugiat
+                    libero quas aliquam pariatur, aperiam maiores magni sunt vero beatae dolorum corrupti expedita unde.
+                    Maiores.</p>
+                <div class="cardWrapper">
+                    <div class="card">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <h2>Call Us On</h2>
+                        <h6>+91 9699685491</h6>
+                    </div>
+                    <div class="card">
+                        <i class="fa-regular fa-envelope"></i>
 
-    <section class="reviews">
-        <div class="container">
-            <h1 class="sectionHeading"><span>Our</span> Client</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis fugit fuga delectus eum nulla minima!
-                Sint sequi iusto rerum deleniti enim alias. Molestiae possimus in exercitationem iste magni, at amet!
-            </p>
-            <div class="slider">
-
-                <div class="slide">
-                    <img src="img/lady.png" alt="">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, natus non. Saepe, quae. Nihil
-                        maiores minus nesciunt aut quia totam expedita praesentium, eius ipsa magni non eveniet,
-                        dignissimos quod nisi.</p>
-                    <span>Name, company ABC</span>
-                </div>
-                <div class="slide">
-                    <img src="img/lady.png" alt="">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, natus non. Saepe, quae. Nihil
-                        maiores minus nesciunt aut quia totam expedita praesentium, eius ipsa magni non eveniet,
-                        dignissimos quod nisi.</p>
-                    <span>Name, company ABC</span>
-                </div>
-                <div class="slide">
-                    <img src="img/lady.png" alt="">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, natus non. Saepe, quae. Nihil
-                        maiores minus nesciunt aut quia totam expedita praesentium, eius ipsa magni non eveniet,
-                        dignissimos quod nisi.</p>
-                    <span>Name, company ABC</span>
-                </div>
-                <div class="slide">
-                    <img src="img/lady.png" alt="">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, natus non. Saepe, quae. Nihil
-                        maiores minus nesciunt aut quia totam expedita praesentium, eius ipsa magni non eveniet,
-                        dignissimos quod nisi.</p>
-                    <span>Name, company ABC</span>
-                </div>
-                <div class="slide">
-                    <img src="img/lady.png" alt="">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum, natus non. Saepe, quae. Nihil
-                        maiores minus nesciunt aut quia totam expedita praesentium, eius ipsa magni non eveniet,
-                        dignissimos quod nisi.</p>
-                    <span>Name, company ABC</span>
+                        <h2>Email Us At</h2>
+                        <h6>anandjaiswar02@gmail.com</h6>
+                    </div>
+                    <div class="card">
+                        <i class="fa-regular fa-map"></i>
+                        <h2>Visit Office</h2>
+                        <h6>None.....</h6>
+                    </div>
                 </div>
 
+                <form action="" target="_blank">
+                    <div class="inputWrap">
+                        <input type="text" placeholder="Your Name*" required>
+                        <input type="text" placeholder="Your Email*" required>
+                    </div>
+                    <div class="inputWrap-2">
+                        <input type="text" placeholder="Your Subject.......*" required>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message*" required></textarea>
+                    </div>
+                    <div class="btnWrapper">
+                        <button class="btn btn-secondary">Send Message</button>
+                    </div>
+                </form>
             </div>
-            <div class="sliderDots"></div>
-        </div>
-    </section>
+        </section>
 
-    <section class="work">
-        <div class="container">
-            <h1 class="sectionHeading"><span>Our</span> Works</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis similique ab veniam nostrum
-                possimus sequi dolorum ullam excepturi, modi vel. Facere non commodi fugit ratione at debitis culpa
-                illum. Impedit?</p>
-
-
-            <div class="cardWrapper">
-                <div class="card">
-                    <div class="overlay">
-                        <span>Category</span>
-                        <a href="" target="_blank" rel="noopener noreferrer">Name Of Project</a>
-                    </div>
-                    <img src="img/ph-1.png" alt="">
-                </div>
-                <div class="card">
-                    <div class="overlay">
-                        <span>Category</span>
-                        <a href="" target="_blank" rel="noopener noreferrer">Name Of Project</a>
-                    </div>
-                    <img src="img/ph-1.png" alt="">
-                </div>
-                <div class="card">
-                    <div class="overlay">
-                        <span>Category</span>
-                        <a href="" target="_blank" rel="noopener noreferrer">Name Of Project</a>
-                    </div>
-                    <img src="img/ph-1.png" alt="">
-                </div>
-                <div class="card">
-                    <div class="overlay">
-                        <span>Category</span>
-                        <a href="" target="_blank" rel="noopener noreferrer">Name Of Project</a>
-                    </div>
-                    <img src="img/ph-1.png" alt="">
-                </div>
-                <div class="card">
-                    <div class="overlay">
-                        <span>Category</span>
-                        <a href="" target="_blank" rel="noopener noreferrer">Name Of Project</a>
-                    </div>
-                    <img src="img/ph-1.png" alt="">
-                </div>
-                <div class="card">
-                    <div class="overlay">
-                        <span>Category</span>
-                        <a href="" target="_blank" rel="noopener noreferrer">Name Of Project</a>
-                    </div>
-                    <img src="img/ph-1.png" alt="">
-                </div>
-
+        <footer>
+            <img src="img/logo.svg" alt="">
+            <div class="footerSocials">
+                <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-code"></i></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
             </div>
-        </div>
-    </section>
-
+            <div class="Copyright">
+                Copyright 2022 &copy; . All Rights Reserved.
+            </div>
+        </footer>
+    </div>
+    
 </body>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/script.js"></script>
+
 
 </html>
