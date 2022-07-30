@@ -5,7 +5,7 @@ $(document).ready(function () {
         appendDots: '.sliderDots',
         dotsClass: 'dots',
 
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 4000,
     });
 

@@ -30,7 +30,7 @@ html {
 }
 
 header {
-    background-color: var(--dark);
+    background: var(--dark);
     /* height: 800px; */
     clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 88%, 0 100%);
 }
