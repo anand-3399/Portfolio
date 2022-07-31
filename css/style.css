@@ -525,4 +525,10 @@ footer .Copyright {
     color: var(--ternary);
 }
 
-/* For Responsive */
+.GitHubSkyLines .container .render-viewer {
+    width: 100%;
+    height: 30rem;
+}
+.GitHubSkyLines{
+    margin-top: 5rem;
+}

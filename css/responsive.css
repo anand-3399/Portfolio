@@ -55,6 +55,7 @@
 }
 
 @media (max-width:576px) {
+    /* For Phones */
     section.about .container {
         flex-direction: column;
     }
@@ -169,6 +170,16 @@
 
     footer {
         padding: 2rem 0;
+    }
+
+    .GitHubSkyLines .container .render-viewer {
+        height: 25rem;
+    }
+    .GitHubSkyLines {
+        margin-top: 3rem;
+    }
+    .GitHubSkyLines .container .sectionHeading{
+        line-height: 1.5;
     }
 }
 
