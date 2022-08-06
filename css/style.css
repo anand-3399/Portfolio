@@ -543,6 +543,7 @@ footer .Copyright {
 .skills__container {
     row-gap: 0;
 }
+
 /* 
 .skills__content {
     margin-top: 2rem;
@@ -635,10 +636,38 @@ footer .Copyright {
     overflow: hidden;
 }
 
-.skills__open .skills__list{
+.skills__open .skills__list {
     height: max-content;
     margin-bottom: 2rem;
 }
-.skills__open .skills__arrow{
+
+.skills__open .skills__arrow {
     transform: rotate(-180deg);
+}
+
+/* Scroll Up */
+.scrollup {
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    background-color: var(--primary);
+    opacity: .8;
+    padding: 0 .3rem;
+    border-radius: .4rem;
+    z-index: 1000;
+    transition: .4s;
+
+}
+
+.scrollup:hover {
+    background-color: #42a5a8;
+}
+
+.scrollup__icon {
+    font-size: 1.5rem;
+    color: var(--pure);
+}
+
+.show-scroll {
+    bottom: 5rem !important;
 }

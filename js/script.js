@@ -27,7 +27,7 @@ const skillscontent = document.getElementsByClassName('skills__content'),
     skillsheader = document.querySelectorAll('.skills__header');
 
 function toggleSkills() {
-    let itemClass = this.parentNode.className; //
+    let itemClass = this.parentNode.className;
 
     for (i = 0; i < skillscontent.length; i++) {
         skillscontent[i].className = 'skills__content skills__close';
@@ -40,3 +40,14 @@ function toggleSkills() {
 skillsheader.forEach((el) => {
     el.addEventListener('click', toggleSkills);
 })
+
+// Scroll Up
+function scrollUp() {
+    const scrollUp = document.getElementById('scroll-Up');
+    if (this.scrollY >= 560)
+        scrollUp.classList.add('show-scroll')
+    else
+        scrollUp.classList.remove('show-scroll')
+
+}
+window.addEventListener('scroll', scrollUp)
