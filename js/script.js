@@ -23,3 +23,20 @@ $(document).ready(function () {
     });
 });
 
+const skillscontent = document.getElementsByClassName('skills__content'),
+    skillsheader = document.querySelectorAll('.skills__header');
+
+function toggleSkills() {
+    let itemClass = this.parentNode.className; //
+
+    for (i = 0; i < skillscontent.length; i++) {
+        skillscontent[i].className = 'skills__content skills__close';
+    }
+
+    if (itemClass === 'skills__content skills__close') {
+        this.parentNode.className = 'skills__content skills__open';
+    }
+}
+skillsheader.forEach((el) => {
+    el.addEventListener('click', toggleSkills);
+})
