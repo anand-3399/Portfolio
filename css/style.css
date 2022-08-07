@@ -629,6 +629,7 @@ section.GitHubSkyLines .container .render-viewer {
 
 section.GitHubSkyLines {
     padding-top: 4rem;
+    margin-top: 0;
 }
 
 .grid {
