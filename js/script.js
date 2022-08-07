@@ -91,32 +91,19 @@ var GitHubSkyLines = document.getElementsByClassName('GitHubSkyLines')[0];
 var contact = document.getElementsByClassName('contact')[0];
 
 
+
 // Activate / deactivate the theme manually with the button
 themeButton.addEventListener('click', () => {
-    // Add or remove the dark / icon theme
-
-    // document.body.classList.toggle(darkTheme)
-    siteMainWrapper.classList.toggle(darkTheme)
-    about.classList.toggle(darkTheme)
-    header.classList.toggle(darkTheme)
-    services.classList.toggle(darkTheme)
-    skills.classList.toggle(darkTheme)
-    freeLancer.classList.toggle(darkTheme)
-    reviews.classList.toggle(darkTheme)
-    work.classList.toggle(darkTheme)
-    blog.classList.toggle(darkTheme)
-    GitHubSkyLines.classList.toggle(darkTheme)
-    contact.classList.toggle(darkTheme)
-
-
-
-    themeButton.classList.toggle(iconTheme)
-    // We save the theme and the current icon that the user chose
-    localStorage.setItem('selected-theme', getCurrentTheme())
-    localStorage.setItem('selected-icon', getCurrentIcon())
+    
+    toggleCLasses()
 })
 
 themeButton1.addEventListener('click', () => {
+    
+    toggleCLasses()
+})
+
+function toggleCLasses() {
     // Add or remove the dark / icon theme
 
     // document.body.classList.toggle(darkTheme)
@@ -131,11 +118,9 @@ themeButton1.addEventListener('click', () => {
     blog.classList.toggle(darkTheme)
     GitHubSkyLines.classList.toggle(darkTheme)
     contact.classList.toggle(darkTheme)
+    themeButton.classList.toggle(iconTheme)
 
-
-
-    themeButton1.classList.toggle(iconTheme)
     // We save the theme and the current icon that the user chose
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
-})
+}
