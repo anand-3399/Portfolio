@@ -58,9 +58,106 @@ header nav {
 }
 
 header nav .branding {
-    margin-right: 3rem;
+    margin-right: 1rem;
 }
 
+/* Here Dark Theme */
+
+header nav .right i {
+    font-size: 1.2rem;
+    color: var(--pure);
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+}
+
+.chage-theme {
+    cursor: pointer;
+
+}
+
+.chage-theme:hover {
+    color: var(--primary);
+
+}
+
+header.dark-theme,
+section.freeLancer.dark-theme,
+section.blog.dark-theme {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+section.about.dark-theme,
+section.Skills.dark-theme,
+section.reviews.dark-theme,
+section.GitHubSkyLines.dark-theme {
+    background-color: #1b191f;
+
+}
+
+section.work.dark-theme,
+section.contact.dark-theme {
+    background-color: #2f2e31;
+
+}
+
+section.about.dark-theme p {
+    color: #e2d1d1;
+}
+
+section.services.dark-theme {
+    background-color: var(--secondary);
+}
+
+section.about.dark-theme h1,
+section.about.dark-theme h3,
+section.services.dark-theme h1.sectionHeading,
+section.Skills.dark-theme h1.sectionHeading,
+section.Skills.dark-theme .skills__container,
+section.Skills.dark-theme .skills__icon,
+section.Skills.dark-theme .skills__arrow,
+section.reviews.dark-theme h1.sectionHeading,
+section.reviews.dark-theme .slider .slide span,
+section.work.dark-theme h1.sectionHeading,
+section.GitHubSkyLines.dark-theme h1.sectionHeading,
+section.contact.dark-theme h1.sectionHeading,
+section.contact.dark-theme .cardWrapper .card {
+    color: var(--pure);
+}
+
+section.services.dark-theme .sectionHeading+p,
+section.Skills.dark-theme .sectionHeading+p,
+section.Skills.dark-theme .skills__subtitle,
+section.reviews.dark-theme .sectionHeading+p,
+section.reviews.dark-theme .slider .slide p,
+section.work.dark-theme .sectionHeading+p,
+section.blog.dark-theme .sectionHeading+p,
+section.contact.dark-theme .sectionHeading+p,
+section.contact.dark-theme .cardWrapper .card h6 {
+    color: #e2d1d1;
+}
+
+section.services.dark-theme .cardWrapper .card {
+    background: linear-gradient(to right, #00ffdc, #00ccff);
+}
+
+section.services.dark-theme .cardWrapper .card:hover {
+    /* background: transparent; */
+    background: linear-gradient(to right, #00ffdc, #00ccff);
+
+}
+
+section.contact.dark-theme input,
+section.contact.dark-theme .inputWrap-2 textarea {
+    background: black;
+    color: var(--pure);
+}
+
+/* section.Skills.dark-theme {
+    background-color: #2c315a;
+} */
+
+/* End of dark theme */
 .hero {
     padding: 0.2rem 0;
 }
@@ -525,13 +622,13 @@ footer .Copyright {
     color: var(--ternary);
 }
 
-.GitHubSkyLines .container .render-viewer {
+section.GitHubSkyLines .container .render-viewer {
     width: 100%;
     height: 30rem;
 }
 
-.GitHubSkyLines {
-    margin-top: 5rem;
+section.GitHubSkyLines {
+    padding-top: 4rem;
 }
 
 .grid {

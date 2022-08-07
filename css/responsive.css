@@ -4,7 +4,8 @@
     }
 
     .hamburger,
-    .times {
+    .times,
+    .themsButton {
         display: block !important;
     }
 
@@ -55,6 +56,7 @@
 }
 
 @media (max-width:576px) {
+
     /* For Phones */
     section.about .container {
         flex-direction: column;
@@ -175,10 +177,12 @@
     .GitHubSkyLines .container .render-viewer {
         height: 25rem;
     }
+
     .GitHubSkyLines {
         margin-top: 3rem;
     }
-    .GitHubSkyLines .container .sectionHeading{
+
+    .GitHubSkyLines .container .sectionHeading {
         line-height: 1.5;
     }
 }
@@ -223,7 +227,8 @@
 }
 
 .hamburger i,
-.times i {
+.times i,
+.themsButton i {
     font-size: 30px;
 }
 
@@ -251,6 +256,18 @@
     position: fixed;
     top: 40px;
     right: 43px;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    border: none;
+
+}
+
+.themsButton {
+    display: none;
+    position: fixed;
+    top: 90px;
+    right: 36px;
     outline: none;
     cursor: pointer;
     background: none;

@@ -1,5 +1,6 @@
 $(document).ready(function () {
     $('.slider').slick({
+
         arrows: false,
         dots: true,
         appendDots: '.sliderDots',
@@ -7,6 +8,7 @@ $(document).ready(function () {
 
         autoplay: true,
         autoplaySpeed: 4000,
+
     });
 
     // Doing Responsive from here
@@ -51,3 +53,86 @@ function scrollUp() {
 
 }
 window.addEventListener('scroll', scrollUp)
+
+
+// Dark-Light Theme
+const themeButton = document.getElementById('theme-button')
+const themeButton1 = document.getElementById('theme-button1')
+const darkTheme = 'dark-theme'
+const iconTheme = 'uil-sun'
+
+// Previously selected topic (if user selected)
+const selectedTheme = localStorage.getItem('selected-theme')
+const selectedIcon = localStorage.getItem('selected-icon')
+
+// We obtain the current theme that the interface has by validating the dark-theme class
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
+const getCurrentIcon1 = () => themeButton1.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
+
+// We validate if the user previously chose a topic
+if (selectedTheme) {
+    // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+    themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
+    themeButton1.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
+}
+
+var about = document.getElementById('about');
+var header = document.querySelector("header");
+var services = document.getElementById('Services');
+var skills = document.getElementById('skills');
+var freeLancer = document.getElementsByClassName('freeLancer')[0];
+var reviews = document.getElementsByClassName('reviews')[0];
+var work = document.getElementsByClassName('work')[0];
+var blog = document.getElementsByClassName('blog')[0];
+var GitHubSkyLines = document.getElementsByClassName('GitHubSkyLines')[0];
+var contact = document.getElementsByClassName('contact')[0];
+
+
+// Activate / deactivate the theme manually with the button
+themeButton.addEventListener('click', () => {
+    // Add or remove the dark / icon theme
+
+    // document.body.classList.toggle(darkTheme)
+    about.classList.toggle(darkTheme)
+    header.classList.toggle(darkTheme)
+    services.classList.toggle(darkTheme)
+    skills.classList.toggle(darkTheme)
+    freeLancer.classList.toggle(darkTheme)
+    reviews.classList.toggle(darkTheme)
+    work.classList.toggle(darkTheme)
+    blog.classList.toggle(darkTheme)
+    GitHubSkyLines.classList.toggle(darkTheme)
+    contact.classList.toggle(darkTheme)
+
+
+
+    themeButton.classList.toggle(iconTheme)
+    // We save the theme and the current icon that the user chose
+    localStorage.setItem('selected-theme', getCurrentTheme())
+    localStorage.setItem('selected-icon', getCurrentIcon())
+})
+
+themeButton1.addEventListener('click', () => {
+    // Add or remove the dark / icon theme
+
+    // document.body.classList.toggle(darkTheme)
+    about.classList.toggle(darkTheme)
+    header.classList.toggle(darkTheme)
+    services.classList.toggle(darkTheme)
+    skills.classList.toggle(darkTheme)
+    freeLancer.classList.toggle(darkTheme)
+    reviews.classList.toggle(darkTheme)
+    work.classList.toggle(darkTheme)
+    blog.classList.toggle(darkTheme)
+    GitHubSkyLines.classList.toggle(darkTheme)
+    contact.classList.toggle(darkTheme)
+
+
+
+    themeButton1.classList.toggle(iconTheme)
+    // We save the theme and the current icon that the user chose
+    localStorage.setItem('selected-theme', getCurrentTheme())
+    localStorage.setItem('selected-icon', getCurrentIcon())
+})
