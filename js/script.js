@@ -78,6 +78,7 @@ if (selectedTheme) {
     themeButton1.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
 }
 
+var siteMainWrapper = document.getElementsByClassName('siteMainWrapper')[0];
 var about = document.getElementById('about');
 var header = document.querySelector("header");
 var services = document.getElementById('Services');
@@ -95,6 +96,7 @@ themeButton.addEventListener('click', () => {
     // Add or remove the dark / icon theme
 
     // document.body.classList.toggle(darkTheme)
+    siteMainWrapper.classList.toggle(darkTheme)
     about.classList.toggle(darkTheme)
     header.classList.toggle(darkTheme)
     services.classList.toggle(darkTheme)
@@ -118,6 +120,7 @@ themeButton1.addEventListener('click', () => {
     // Add or remove the dark / icon theme
 
     // document.body.classList.toggle(darkTheme)
+    siteMainWrapper.classList.toggle(darkTheme)
     about.classList.toggle(darkTheme)
     header.classList.toggle(darkTheme)
     services.classList.toggle(darkTheme)

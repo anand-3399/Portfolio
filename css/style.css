@@ -63,6 +63,11 @@ header nav .branding {
 
 /* Here Dark Theme */
 
+.siteMainWrapper.dark-theme{
+    background: #1b191f;
+}
+
+
 header nav .right i {
     font-size: 1.2rem;
     color: var(--pure);
@@ -81,11 +86,14 @@ header nav .right i {
 
 }
 
-header.dark-theme,
+
+/* header.dark-theme,
 section.freeLancer.dark-theme,
-section.blog.dark-theme {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
+section.blog.dark-theme{} 
+*/
+
+/* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
+
 
 section.about.dark-theme,
 section.Skills.dark-theme,
