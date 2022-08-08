@@ -96,6 +96,7 @@ section.blog.dark-theme{}
 
 
 section.about.dark-theme,
+section.services.dark-theme .cardWrapper .card,
 section.Skills.dark-theme,
 section.reviews.dark-theme,
 section.GitHubSkyLines.dark-theme {
@@ -104,13 +105,24 @@ section.GitHubSkyLines.dark-theme {
 }
 
 section.work.dark-theme,
-section.contact.dark-theme {
+section.contact.dark-theme,
+section.blog.dark-theme .cardWrapper .card {
     background-color: #2f2e31;
 
 }
 
 section.about.dark-theme p {
     color: #e2d1d1;
+}
+
+section.blog.dark-theme .cardWrapper .card .cardContent span,
+section.blog.dark-theme .cardWrapper .card .cardContent a.readMore {
+    color: bisque;
+}
+
+section.blog.dark-theme .cardWrapper .card .cardContent h1:hover,
+section.blog.dark-theme .cardWrapper .card .cardContent a.readMore:hover {
+    color: var(--primary);
 }
 
 section.services.dark-theme {
@@ -120,6 +132,7 @@ section.services.dark-theme {
 section.about.dark-theme h1,
 section.about.dark-theme h3,
 section.services.dark-theme h1.sectionHeading,
+section.services.dark-theme .cardWrapper .card h2,
 section.Skills.dark-theme h1.sectionHeading,
 section.Skills.dark-theme .skills__container,
 section.Skills.dark-theme .skills__icon,
@@ -127,6 +140,7 @@ section.Skills.dark-theme .skills__arrow,
 section.reviews.dark-theme h1.sectionHeading,
 section.reviews.dark-theme .slider .slide span,
 section.work.dark-theme h1.sectionHeading,
+section.blog.dark-theme .cardWrapper .card .cardContent h1,
 section.GitHubSkyLines.dark-theme h1.sectionHeading,
 section.contact.dark-theme h1.sectionHeading,
 section.contact.dark-theme .cardWrapper .card {
@@ -134,24 +148,27 @@ section.contact.dark-theme .cardWrapper .card {
 }
 
 section.services.dark-theme .sectionHeading+p,
+section.services.dark-theme .cardWrapper .card p,
 section.Skills.dark-theme .sectionHeading+p,
 section.Skills.dark-theme .skills__subtitle,
 section.reviews.dark-theme .sectionHeading+p,
 section.reviews.dark-theme .slider .slide p,
 section.work.dark-theme .sectionHeading+p,
 section.blog.dark-theme .sectionHeading+p,
+section.blog.dark-theme .cardWrapper .card .cardContent p,
 section.contact.dark-theme .sectionHeading+p,
 section.contact.dark-theme .cardWrapper .card h6 {
     color: #e2d1d1;
 }
 
 section.services.dark-theme .cardWrapper .card {
-    background: linear-gradient(to right, #00ffdc, #00ccff);
+    /* background: linear-gradient(to right, #00ffdc, #00ccff); */
+    /* background-color: var(--secondary); */
 }
 
 section.services.dark-theme .cardWrapper .card:hover {
     /* background: transparent; */
-    background: linear-gradient(to right, #00ffdc, #00ccff);
+    /* background: linear-gradient(to right, #00ffdc, #00ccff); */
 
 }
 

@@ -22,7 +22,7 @@ $(document).ready(function () {
     });
 
 
-    
+
     const skillscontent = document.getElementsByClassName('skills__content'),
         skillsheader = document.querySelectorAll('.skills__header');
 
@@ -116,11 +116,14 @@ $(document).ready(function () {
         blog.classList.toggle(darkTheme)
         GitHubSkyLines.classList.toggle(darkTheme)
         contact.classList.toggle(darkTheme)
+
         themeButton.classList.toggle(iconTheme)
+        themeButton1.classList.toggle(iconTheme)
 
         // We save the theme and the current icon that the user chose
         localStorage.setItem('selected-theme', getCurrentTheme())
         localStorage.setItem('selected-icon', getCurrentIcon())
+        localStorage.setItem('selected-icon', getCurrentIcon1())
     }
 
 
