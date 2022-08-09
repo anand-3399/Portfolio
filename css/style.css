@@ -125,7 +125,9 @@ section.blog.dark-theme .cardWrapper .card .cardContent a.readMore:hover {
     color: var(--primary);
 }
 
-section.services.dark-theme {
+section.services.dark-theme,
+section.about.dark-theme .about-image,
+section.qualification.dark-theme {
     background-color: var(--secondary);
 }
 
@@ -137,13 +139,15 @@ section.Skills.dark-theme h1.sectionHeading,
 section.Skills.dark-theme .skills__container,
 section.Skills.dark-theme .skills__icon,
 section.Skills.dark-theme .skills__arrow,
+section.qualification.dark-theme h1.sectionHeading,
 section.reviews.dark-theme h1.sectionHeading,
 section.reviews.dark-theme .slider .slide span,
 section.work.dark-theme h1.sectionHeading,
 section.blog.dark-theme .cardWrapper .card .cardContent h1,
 section.GitHubSkyLines.dark-theme h1.sectionHeading,
 section.contact.dark-theme h1.sectionHeading,
-section.contact.dark-theme .cardWrapper .card {
+section.contact.dark-theme .cardWrapper .card,
+section.qualification.dark-theme .qualification__container {
     color: var(--pure);
 }
 
@@ -151,6 +155,7 @@ section.services.dark-theme .sectionHeading+p,
 section.services.dark-theme .cardWrapper .card p,
 section.Skills.dark-theme .sectionHeading+p,
 section.Skills.dark-theme .skills__subtitle,
+section.qualification.dark-theme .sectionHeading+p,
 section.reviews.dark-theme .sectionHeading+p,
 section.reviews.dark-theme .slider .slide p,
 section.work.dark-theme .sectionHeading+p,
@@ -188,7 +193,7 @@ section.contact.dark-theme .inputWrap-2 textarea {
 }
 
 .hero .left img {
-    width: 320px;
+    /* width: 320px; */
     height: 620px;
 }
 
@@ -229,6 +234,9 @@ section {
 
 section.about .about-image {
     height: 400px;
+    border-radius: 16px;
+    /* border: 2px solid; */
+    background: #f2f2f2;
 }
 
 section.about h1 {
@@ -793,4 +801,88 @@ section.GitHubSkyLines {
 
 .show-scroll {
     bottom: 5rem !important;
+}
+
+/* Qualifications */
+
+.qualification__tabs {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
+}
+
+.qualification__button {
+    font-size: 1.25rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.qualification__button:hover {
+    color: var(--primary);
+}
+
+.qualification__icon {
+    font-size: 1.8rem;
+    margin-right: 0.25rem;
+}
+
+.qualification__data {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    column-gap: 1.5rem;
+}
+
+.qualification__title {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.qualification__subtitle {
+    display:block;
+    font-size: 0.875rem;
+    /* margin-bottom: 0.5rem; */
+    color: var(--ternary);
+}
+
+.qualification__calendar {
+    font-size: 0.813rem;
+    color: var(--ternary);
+    margin-top: 0.5rem;
+}
+
+.qualification__rounder {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: var(--primary);
+    border-radius: 50%;
+}
+
+.qualification__line {
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: var(--primary);
+    transform: translate(6px, -7px);
+}
+
+.qualification [data-content] {
+    display: none;
+}
+
+.qualification__active[data-content] {
+    display: block;
+}
+
+.qualification__button.qualification__active {
+    color: var(--primary);
+}
+
+.qualification__sections {
+    margin: 0rem 6rem;
+
+}
+
+section.qualification{
+    background: var(--light);
 }

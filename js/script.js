@@ -81,6 +81,7 @@ $(document).ready(function () {
     var header = document.querySelector("header");
     var services = document.getElementById('Services');
     var skills = document.getElementById('skills');
+    var qualification = document.getElementsByClassName('qualification')[0];
     var freeLancer = document.getElementsByClassName('freeLancer')[0];
     var reviews = document.getElementsByClassName('reviews')[0];
     var work = document.getElementsByClassName('work')[0];
@@ -110,6 +111,7 @@ $(document).ready(function () {
         header.classList.toggle(darkTheme)
         services.classList.toggle(darkTheme)
         skills.classList.toggle(darkTheme)
+        qualification.classList.toggle(darkTheme)
         freeLancer.classList.toggle(darkTheme)
         reviews.classList.toggle(darkTheme)
         work.classList.toggle(darkTheme)
@@ -126,6 +128,24 @@ $(document).ready(function () {
         localStorage.setItem('selected-icon', getCurrentIcon1())
     }
 
+    // Qualifications
+    const tabs = document.querySelectorAll('[data-target]'),
+        tabContents = document.querySelectorAll('[data-content]')
+
+
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const target = document.querySelector(tab.dataset.target)
+            tabContents.forEach(tabContent => {
+                tabContent.classList.remove('qualification__active')
+            })
+            target.classList.add('qualification__active')
+            tabs.forEach(tab => {
+                tab.classList.remove('qualification__active')
+            })
+            tab.classList.add('qualification__active')
+        })
+    })
 
 
 });

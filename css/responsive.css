@@ -10,8 +10,8 @@
     }
 
     .hero .left img {
-        width: 260px;
-        height: 508px;
+        /* width: 260px;
+        height: 508px; */
     }
 
     .hero .right h1 {
@@ -45,6 +45,8 @@
     section.blog {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 96%, 0 100%);
     }
+
+
 }
 
 @media (min-width:576px) {
@@ -63,8 +65,8 @@
     }
 
     .hero .left img {
-        width: 208px;
-        height: 387px;
+        width: 170px;
+        /* height: 387px; */
     }
 
     header {
@@ -110,7 +112,7 @@
 
     .hero .right {
         margin-top: -15rem;
-        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+        background: linear-gradient(rgba(0, 0, 0, 0), #0d0d0d);
     }
 
     section.about h1 {
@@ -185,6 +187,10 @@
     .GitHubSkyLines .container .sectionHeading {
         line-height: 1.5;
     }
+
+    .qualification__sections {
+        margin: 0;
+    }
 }
 
 
@@ -205,6 +211,10 @@
 @media (min-width:1200px) {
     .container {
         max-width: 1152px;
+    }
+
+    .qualification__container {
+        margin: 0% 10%;
     }
 }
 
