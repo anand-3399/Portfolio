@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -59,7 +59,7 @@
                     </div>
 
                     <div class="right">
-                        <button class="btn btn-primary">Contact</button>
+                        <button class="btn btn-primary" onclick="location.href = '#Contact'">Contact</button>
                         <i class="uil uil-moon chage-theme" id="theme-button"></i>
                     </div>
                 </nav>
@@ -617,7 +617,7 @@
             </div>
         </section>
 
-        <section class="contact">
+        <section class="contact" id="Contact">
             <div class="container">
                 <h1 class="sectionHeading">Contact <span>Us</span></h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia nihil ullam illo culpa dolorem,
@@ -643,19 +643,22 @@
                     </div>
                 </div>
 
-                <form action="" target="_blank">
+                <form name="submit-to-google-sheet">
                     <div class="inputWrap">
-                        <input type="text" placeholder="Your Name*" required>
-                        <input type="email" placeholder="Your Email*" required>
+                        <input type="text" name="Name" placeholder="Your Name*" required>
+                        <input type="email" name="Email" placeholder="Your Email*" required>
                     </div>
                     <div class="inputWrap-2">
-                        <input type="text" placeholder="Your Subject.......*" required>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message*" required></textarea>
+                        <input type="text" name="Subject" placeholder="Your Subject.......*" required>
+                        <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message*"
+                            required></textarea>
                     </div>
+                    <span id="msg"></span>
                     <div class="btnWrapper">
                         <button class="btn btn-secondary">Send Message</button>
                     </div>
                 </form>
+
             </div>
         </section>
 
@@ -687,6 +690,7 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 <script src="js/script.js"></script>
 
 
