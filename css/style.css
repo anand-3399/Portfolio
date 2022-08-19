@@ -59,6 +59,7 @@ header nav {
 
 header nav .branding {
     margin-right: 1rem;
+
 }
 
 header nav .branding img {
@@ -385,7 +386,7 @@ section.services .cardWrapper .card:hover p {
 
 section.freeLancer {
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/camera.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../image/camera.png);
     /*Last value 0.7 is for opacity and if we are doing this, it is easier to overlay the image*/
 
     color: var(--pure);
@@ -746,7 +747,8 @@ section.GitHubSkyLines {
     background-color: var(--primary);
 }
 
-.skills__html {
+.skills__html,
+.skills__sketch {
     width: 90%;
 }
 
@@ -762,7 +764,9 @@ section.GitHubSkyLines {
     width: 60%;
 }
 
-.skills__python {
+.skills__python,
+.skills__figma,
+.skills__photoshop {
     width: 80%;
 }
 
@@ -895,3 +899,7 @@ section.qualification {
     color: #26ff00;
     display: block;
 }
+
+/* --------------------- */
+
+
