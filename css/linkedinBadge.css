@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.profile-badge {
+    width: -webkit-fill-available !important;
+    height: 24rem;
+}
+
+.profile-badge__content {
+    position: relative;
+}
+
+.profile-badge__content-profile-image {
+    position: absolute;
+}
+
+.artdeco-entity-image--circle-4 {
+    width: 17rem !important;
+    height: 17rem !important;
+}
+
+.profile-badge__content-profile-name {
+    position: absolute;
+    left: 19rem;
+    top: 2rem;
+}
+
+.profile-badge__content-profile-headline {
+    position: absolute;
+    left: 19rem;
+    top: 5rem;
+}
+
+.profile-badge__content-profile-company-school-info {
+    position: absolute;
+    left: 19rem;
+    top: 11rem;
+}
+
+.profile-badge__cta-btn {
+    position: absolute;
+    left: 17rem;
+    top: 14rem;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .profile-badge {
+        height: 35rem;
+    }
+
+    .artdeco-entity-image--circle-4 {
+        width: 10rem !important;
+        height: 10rem !important;
+    }
+
+    .profile-badge__content-profile-name {
+        left: 12rem;
+        top: 2rem;
+    }
+
+    .profile-badge__content-profile-headline {
+        left: 12rem;
+        top: 5rem;
+    }
+
+    .profile-badge__content-profile-company-school-info {
+        left: 12rem;
+        top: 21rem;
+    }
+
+    .profile-badge__cta-btn {
+        left: 10rem;
+        top: 25rem;
+    }
+}

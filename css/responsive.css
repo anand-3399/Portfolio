@@ -189,6 +189,9 @@
     .qualification__sections {
         margin: 0;
     }
+    .linkedinBadgeFrame{
+        height: 24rem;
+    }
 }
 
 

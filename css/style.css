@@ -901,5 +901,8 @@ section.qualification {
 }
 
 /* --------------------- */
-
+.linkedinBadgeFrame{
+    width: -webkit-fill-available;
+    height: 18rem;
+}
 
