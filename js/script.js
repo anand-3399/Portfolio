@@ -89,8 +89,6 @@ $(document).ready(function () {
     var GitHubSkyLines = document.getElementsByClassName('GitHubSkyLines')[0];
     var contact = document.getElementsByClassName('contact')[0];
 
-
-
     // Activate / deactivate the theme manually with the button
     themeButton.addEventListener('click', () => {
 
@@ -147,7 +145,7 @@ $(document).ready(function () {
         })
     })
 
-
+    // Portfolio Forms
     const scriptURL = 'https://script.google.com/macros/s/AKfycbyK6xX6650VW1bgDuz8KD91XnLM-OHSmwcRaY0QOrnwHj5zPRUArpgS2SXqexc-x22Exg/exec'
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById('msg');
