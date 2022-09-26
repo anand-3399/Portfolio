@@ -11,16 +11,31 @@
 
 <body>
 
-    <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="anandjaiswar02" data-version="v1">    
+    <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light"
+        data-type="VERTICAL" data-vanity="anandjaiswar02" data-version="v1">
         <!-- <a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/anandjaiswar02?trk=profile-badge">Anand Jaiswar</a>
         -->
-    </div> 
+    </div>
 
 
-    
+
     <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-
     <!-- <script src="js/script.js"></script> -->
+    <script>
+
+        
+        var aboutMe;
+        
+        function getAboutMe() {
+            aboutMe = document.getElementsByClassName("profile-badge__content-profile-headline")[0].innerText;
+            console.log(aboutMe);
+            localStorage.setItem('TextInAboutME', aboutMe);
+        }
+        
+        setTimeout(getAboutMe, 5000);
+
+        
+    </script>
 </body>
 
 </html>
