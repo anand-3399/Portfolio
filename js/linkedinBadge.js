@@ -1,12 +1,13 @@
-var iframe = document.getElementsByTagName("iframe")[0];
-var frm = iframe.contentDocument;
-var otherhead = frm.getElementsByTagName("head")[0];
-var link = frm.createElement("link");
-link.setAttribute("rel", "stylesheet");
-link.setAttribute("type", "text/css");
-link.setAttribute("href", "css/linkedinBadge.css");
-otherhead.appendChild(link);
-
+function addCssToIframesDocument() {
+    var iframe = document.getElementsByTagName("iframe")[0];
+    var frm = iframe.contentDocument;
+    var otherhead = frm.getElementsByTagName("head")[0];
+    var link = frm.createElement("link");
+    link.setAttribute("rel", "stylesheet");
+    link.setAttribute("type", "text/css");
+    link.setAttribute("href", "css/linkedinBadge.css");
+    otherhead.appendChild(link);
+}
 
 var aboutMe;
 
@@ -17,4 +18,4 @@ function getAboutMe() {
 }
 
 setTimeout(getAboutMe, 5000);
-
+setTimeout(addCssToIframesDocument, 9000);
