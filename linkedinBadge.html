@@ -23,18 +23,24 @@
     <!-- <script src="js/script.js"></script> -->
     <script>
 
-        
+
         var aboutMe;
-        
+
         function getAboutMe() {
             aboutMe = document.getElementsByClassName("profile-badge__content-profile-headline")[0].innerText;
             console.log(aboutMe);
             localStorage.setItem('TextInAboutME', aboutMe);
         }
-        
-        setTimeout(getAboutMe, 5000);
 
-        
+        try {
+            setTimeout(getAboutMe, 5000);
+        }
+        catch (err) {
+            console.log(err);
+        }
+
+
+
     </script>
 </body>
 
