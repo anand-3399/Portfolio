@@ -12,19 +12,11 @@ function addCssToIframesDocument() {
 function addJStoIframesDocument() {
     var iframe = document.getElementsByTagName("iframe")[0];
     var frm = iframe.contentDocument;
+    var aboutMe;
     aboutMe = frm.getElementsByClassName("profile-badge__content-profile-headline")[0].innerText;
     console.log(aboutMe);
     localStorage.setItem('TextInAboutME', aboutMe);
 }
 
-var aboutMe;
-
-function getAboutMe() {
-    aboutMe = document.getElementsByClassName("profile-badge__content-profile-headline")[0].innerText;
-    console.log(aboutMe);
-    localStorage.setItem('TextInAboutME', aboutMe);
-}
-
-
-setTimeout(addCssToIframesDocument, 9000);
-setTimeout(addJStoIframesDocument, 9000);
+setTimeout(addCssToIframesDocument, 5000);
+setTimeout(addJStoIframesDocument, 5000);
