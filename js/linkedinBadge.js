@@ -9,6 +9,16 @@ function addCssToIframesDocument() {
     otherhead.appendChild(link);
 }
 
+function addJStoIframesDocument() {
+    var iframe = document.getElementsByTagName("iframe")[0];
+    var frm = iframe.contentDocument;
+    var otherhead = frm.getElementsByTagName("head")[0];
+    var script = frm.createElement("script");
+    script.setAttribute("type", "text/javascript");
+    script.setAttribute("src", "js/linkedinBadge.js");
+    otherhead.appendChild(script);
+}
+
 var aboutMe;
 
 function getAboutMe() {

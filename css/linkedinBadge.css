@@ -5,13 +5,14 @@
 
 iframe {
     width: -webkit-fill-available !important;
-    height: 24rem;
+    height: 18rem;
 
 }
 
 .profile-badge {
     width: -webkit-fill-available !important;
     height: 24rem;
+    margin-right: 0.4rem;
 }
 
 .profile-badge__content {
