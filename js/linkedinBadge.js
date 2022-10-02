@@ -12,12 +12,9 @@ function addCssToIframesDocument() {
 function addJStoIframesDocument() {
     var iframe = document.getElementsByTagName("iframe")[0];
     var frm = iframe.contentDocument;
-    var otherhead = frm.getElementsByTagName("head")[0];
-    var script = frm.createElement("script");
-    script.setAttribute("type", "text/javascript");
-    script.setAttribute("src", "js/linkedinBadge.js");
-    otherhead.appendChild(script);
-    setTimeout(getAboutMe, 5000);
+    aboutMe = frm.getElementsByClassName("profile-badge__content-profile-headline")[0].innerText;
+    console.log(aboutMe);
+    localStorage.setItem('TextInAboutME', aboutMe);
 }
 
 var aboutMe;
