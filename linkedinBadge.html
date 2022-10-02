@@ -34,6 +34,7 @@
         
         setTimeout(getAboutMe, 5000);
 
+        iframe = document.getElementsByTagName("iframe")[0];
         iframe.onload = function() {
             setTimeout(getAboutMe, 5000);
         }
