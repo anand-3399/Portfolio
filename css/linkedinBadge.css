@@ -3,8 +3,13 @@
     padding: 0;
 }
 
-.profile-badge,
-iframe body .profile-badge {
+iframe {
+    width: -webkit-fill-available !important;
+    height: 24rem;
+
+}
+
+.profile-badge {
     width: -webkit-fill-available !important;
     height: 24rem;
 }
