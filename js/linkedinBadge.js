@@ -17,6 +17,7 @@ function addJStoIframesDocument() {
     script.setAttribute("type", "text/javascript");
     script.setAttribute("src", "js/linkedinBadge.js");
     otherhead.appendChild(script);
+    setTimeout(getAboutMe, 5000);
 }
 
 var aboutMe;
@@ -27,5 +28,6 @@ function getAboutMe() {
     localStorage.setItem('TextInAboutME', aboutMe);
 }
 
-setTimeout(getAboutMe, 5000);
+
 setTimeout(addCssToIframesDocument, 9000);
+setTimeout(addJStoIframesDocument, 9000);
