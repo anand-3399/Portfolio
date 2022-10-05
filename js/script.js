@@ -89,14 +89,88 @@ $(document).ready(function () {
     var GitHubSkyLines = document.getElementsByClassName('GitHubSkyLines')[0];
     var contact = document.getElementsByClassName('contact')[0];
 
+    var linkedinBadgeSection = document.getElementsByClassName('linkedinBadgeSection')[0];
+    // Scripting custom LinkedinBadge for Dark Mode
+
+    // 1. For Main Page -> Iframe -> Div of Linkedin Badge
+
+    function darkToggleingLinkedinBadge1() {
+        var linkedinBadgeSection = document.getElementsByClassName('linkedinBadgeSection')[0];
+        var iframe = linkedinBadgeSection.getElementsByTagName("iframe")[0];
+        var frm = iframe.contentDocument
+
+        frm.getElementsByClassName("profile-badge")[0]
+        var profilebadge = frm.getElementsByClassName("profile-badge")[0]
+        profilebadge.classList.toggle("profile-badge--dark")
+
+        var profilebadgecontentName = frm.getElementsByClassName("profile-badge__content-profile-name-link")[0];
+
+        if (profilebadgecontentName.classList.contains("profile-badge__content-profile-name-link--light")) {
+            profilebadgecontentName.classList.remove("profile-badge__content-profile-name-link--light")
+            profilebadgecontentName.classList.add("profile-badge__content-profile-name-link--dark")
+        } else {
+            profilebadgecontentName.classList.remove("profile-badge__content-profile-name-link--dark")
+            profilebadgecontentName.classList.add("profile-badge__content-profile-name-link--light")
+        }
+
+        var profilebadgeCurrentCompany = frm.getElementsByClassName("profile-badge__content-profile-company-school-info-link")[0];
+
+        if (profilebadgeCurrentCompany.classList.contains("profile-badge__content-profile-company-school-info-link--light")) {
+            profilebadgeCurrentCompany.classList.remove("profile-badge__content-profile-company-school-info-link--light")
+            profilebadgecontentName.classList.add("profile-badge__content-profile-company-school-info-link--dark")
+        } else {
+            profilebadgeCurrentCompany.classList.remove("profile-badge__content-profile-company-school-info-link--dark")
+            profilebadgeCurrentCompany.classList.add("profile-badge__content-profile-company-school-info-link--light")
+        }
+
+    }
+
+    // 2. For Main Page -> Iframe -> Div of Linkedin Badge -> Irame containg Linkedin Badge
+
+    function darkToggleingLinkedinBadge2() {
+        var linkedinBadgeSection = document.getElementsByClassName('linkedinBadgeSection')[0];
+        var iframe = linkedinBadgeSection.getElementsByTagName("iframe")[0];
+        var frm = iframe.contentDocument
+        var iframe2 = frm.getElementsByTagName('iframe')[0]
+        var frm2 = iframe2.contentDocument
+
+        frm2.getElementsByClassName("profile-badge")[0]
+        var profilebadge = frm2.getElementsByClassName("profile-badge")[0]
+        profilebadge.classList.toggle("profile-badge--dark")
+
+
+        var profilebadgecontentName = frm2.getElementsByClassName("profile-badge__content-profile-name-link")[0];
+
+        if (profilebadgecontentName.classList.contains("profile-badge__content-profile-name-link--light")) {
+            profilebadgecontentName.classList.remove("profile-badge__content-profile-name-link--light")
+            profilebadgecontentName.classList.add("profile-badge__content-profile-name-link--dark")
+        } else {
+            profilebadgecontentName.classList.remove("profile-badge__content-profile-name-link--dark")
+            profilebadgecontentName.classList.add("profile-badge__content-profile-name-link--light")
+        }
+
+        var profilebadgeCurrentCompany = frm2.getElementsByClassName("profile-badge__content-profile-company-school-info-link")[0];
+
+        if (profilebadgeCurrentCompany.classList.contains("profile-badge__content-profile-company-school-info-link--light")) {
+            profilebadgeCurrentCompany.classList.remove("profile-badge__content-profile-company-school-info-link--light")
+            profilebadgecontentName.classList.add("profile-badge__content-profile-company-school-info-link--dark")
+        } else {
+            profilebadgeCurrentCompany.classList.remove("profile-badge__content-profile-company-school-info-link--dark")
+            profilebadgeCurrentCompany.classList.add("profile-badge__content-profile-company-school-info-link--light")
+        }
+
+    }
+
+
+
+
+    // End of Scripting
     // Activate / deactivate the theme manually with the button
     themeButton.addEventListener('click', () => {
-
         toggleCLasses()
     })
 
     themeButton1.addEventListener('click', () => {
-
         toggleCLasses()
     })
 
@@ -117,8 +191,18 @@ $(document).ready(function () {
         GitHubSkyLines.classList.toggle(darkTheme)
         contact.classList.toggle(darkTheme)
 
+        try{
+        darkToggleingLinkedinBadge1()
+        darkToggleingLinkedinBadge2()
+        }
+        catch(err){
+            console.log("Error in darkToggleingLinkedinBadge1")
+        }
+
         themeButton.classList.toggle(iconTheme)
         themeButton1.classList.toggle(iconTheme)
+
+
 
         // We save the theme and the current icon that the user chose
         localStorage.setItem('selected-theme', getCurrentTheme())
