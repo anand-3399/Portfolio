@@ -196,7 +196,7 @@ $(document).ready(function () {
         }
         catch (err) {
             darkToggleingLinkedinBadge2()
-            console.log("Error in darkToggleingLinkedinBadge1")
+            console.log("Error in darkToggleingLinkedinBadge1. Hence executing darkToggleingLinkedinBadge2")
         }
 
         themeButton.classList.toggle(iconTheme)

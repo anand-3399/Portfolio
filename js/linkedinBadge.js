@@ -31,10 +31,11 @@ function getAboutMe() {
 
 
 try {
-    setTimeout(addCssToIframesDocument, 2000);
-    setTimeout(addJStoIframesDocument, 2000);
+    setTimeout(addCssToIframesDocument, 5000);
+    setTimeout(addJStoIframesDocument, 5000);
 } catch (error) {
-    console.error("ERROR: " + error);
+    // setTimeout(getAboutMe, 5000);
+    console.log("Error in addCssToIframesDocument");
 } finally {
-    setTimeout(getAboutMe, 3000);
+    setTimeout(getAboutMe, 5000);
 }
