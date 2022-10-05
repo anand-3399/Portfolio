@@ -18,7 +18,7 @@ function addJStoIframesDocument() {
     localStorage.setItem('TextInAboutME', aboutMe);
 }
 
-/*
+
 
 function getAboutMe() {
     aboutMe = document.getElementsByClassName("profile-badge__content-profile-headline")[0].innerText;
@@ -26,9 +26,15 @@ function getAboutMe() {
     localStorage.setItem('TextInAboutME', aboutMe);
 }
 
-setTimeout(getAboutMe, 5000);
+// setTimeout(getAboutMe, 5000);
 
-*/
 
-setTimeout(addCssToIframesDocument, 2000);
-setTimeout(addJStoIframesDocument, 2000);
+
+try {
+    setTimeout(addCssToIframesDocument, 2000);
+    setTimeout(addJStoIframesDocument, 2000);
+} catch (error) {
+    console.error("ERROR: " + error);
+} finally {
+    setTimeout(getAboutMe, 3000);
+}

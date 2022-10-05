@@ -165,17 +165,24 @@ $(document).ready(function () {
             })
             .catch(error => console.error('Error!', error.message))
     })
-    
+
     // Setting the headline dynamically
     var ProfileHeadline = document.getElementById('myProfileHeadlineAndCurrentPosition');
     function TextInAboutMeFunction() {
         ProfileHeadline.innerText = localStorage.getItem('TextInAboutME');
     }
 
-    if(localStorage.getItem('TextInAboutME') != null){
-        ProfileHeadline.innerText = localStorage.getItem('TextInAboutME');
-        setInterval(TextInAboutMeFunction, 5000);
+    function addAboutMeDynamically() {
+        if (localStorage.getItem('TextInAboutME') != null) {
+            ProfileHeadline.innerText = localStorage.getItem('TextInAboutME');
+            setInterval(TextInAboutMeFunction, 5000);
+        }
     }
+
+    setTimeout(addAboutMeDynamically, 8000);
+
+
+
 
 
     // setTimeout(function () {
@@ -185,6 +192,6 @@ $(document).ready(function () {
 
     // setInterval(TextInAboutMeFunction, 5000);
 
-    
+
 
 });
