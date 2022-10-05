@@ -191,11 +191,11 @@ $(document).ready(function () {
         GitHubSkyLines.classList.toggle(darkTheme)
         contact.classList.toggle(darkTheme)
 
-        try{
-        darkToggleingLinkedinBadge1()
-        darkToggleingLinkedinBadge2()
+        try {
+            darkToggleingLinkedinBadge1()
         }
-        catch(err){
+        catch (err) {
+            darkToggleingLinkedinBadge2()
             console.log("Error in darkToggleingLinkedinBadge1")
         }
 
