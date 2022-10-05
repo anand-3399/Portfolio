@@ -30,5 +30,5 @@ setTimeout(getAboutMe, 5000);
 
 */
 
-setTimeout(addCssToIframesDocument, 1000);
-setTimeout(addJStoIframesDocument, 1000);
+setTimeout(addCssToIframesDocument, 2000);
+setTimeout(addJStoIframesDocument, 2000);
