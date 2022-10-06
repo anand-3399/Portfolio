@@ -791,7 +791,7 @@ section.GitHubSkyLines {
     bottom: -20%;
     background-color: var(--primary);
     opacity: .8;
-    padding: 0 .3rem;
+    padding: 4.5px 0.75rem;
     border-radius: .4rem;
     z-index: 1000;
     transition: .4s;
@@ -803,7 +803,7 @@ section.GitHubSkyLines {
 }
 
 .scrollup__icon {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: var(--pure);
 }
 
@@ -906,3 +906,7 @@ section.qualification {
     height: 18rem;
 }
 
+/*  */
+.fa-sun:before{
+    content: "\f185";
+}

@@ -57,7 +57,7 @@ $(document).ready(function () {
     const themeButton = document.getElementById('theme-button')
     const themeButton1 = document.getElementById('theme-button1')
     const darkTheme = 'dark-theme'
-    const iconTheme = 'uil-sun'
+    const iconTheme = 'fa-sun'
 
     // Previously selected topic (if user selected)
     const selectedTheme = localStorage.getItem('selected-theme')
@@ -65,15 +65,25 @@ $(document).ready(function () {
 
     // We obtain the current theme that the interface has by validating the dark-theme class
     const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
-    const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
-    const getCurrentIcon1 = () => themeButton1.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
+    const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'fa-moon' : 'fa-sun'
+    const getCurrentIcon1 = () => themeButton1.classList.contains(iconTheme) ? 'fa-moon' : 'fa-sun'
 
     // We validate if the user previously chose a topic
     if (selectedTheme) {
         // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
         document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-        themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
-        themeButton1.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
+        themeButton.classList[selectedIcon === 'fa-moon' ? 'add' : 'remove'](iconTheme)
+        themeButton1.classList[selectedIcon === 'fa-moon' ? 'add' : 'remove'](iconTheme)
+    }
+
+
+    // Just adding spinning feature in Light Mode
+    function addSpinningFeature() {
+        if (themeButton.classList.contains('fa-sun')) {
+            themeButton.classList.add('fa-spin')
+        } else if (themeButton.classList.contains('fa-spin')) {
+            themeButton.classList.remove('fa-spin')
+        }
     }
 
     var siteMainWrapper = document.getElementsByClassName('siteMainWrapper')[0];
@@ -202,7 +212,7 @@ $(document).ready(function () {
         themeButton.classList.toggle(iconTheme)
         themeButton1.classList.toggle(iconTheme)
 
-
+        addSpinningFeature()
 
         // We save the theme and the current icon that the user chose
         localStorage.setItem('selected-theme', getCurrentTheme())
