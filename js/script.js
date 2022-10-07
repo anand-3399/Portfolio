@@ -7,7 +7,7 @@ $(document).ready(function () {
         autoplay: true,
         autoplaySpeed: 4000,
     });
- 
+
     // Doing Responsive from here
     let hamburger = document.querySelector('.hamburger');
     let times = document.querySelector('.times');

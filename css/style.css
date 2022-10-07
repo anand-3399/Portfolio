@@ -156,6 +156,13 @@ section.qualification.dark-theme .qualification__container {
     color: var(--pure);
 }
 
+section.Skills.dark-theme .skills__icon,
+section.qualification.dark-theme .qualification__icon,
+section.qualification.dark-theme .qualification__calendar__icon {
+    filter: invert(1);
+}
+
+
 section.services.dark-theme .sectionHeading+p,
 section.services.dark-theme .cardWrapper .card p,
 section.Skills.dark-theme .sectionHeading+p,
@@ -474,7 +481,7 @@ section.work .cardWrapper {
 
 section.work .cardWrapper .card {
     position: relative;
-    height: 250px;
+    height: 200px;
 
 }
 
@@ -497,6 +504,7 @@ section.work .cardWrapper .card .overlay {
 
 section.work .cardWrapper .card:hover .overlay {
     opacity: 1;
+    border-radius: 15px;
 }
 
 section.work .cardWrapper .card .overlay a {
@@ -507,6 +515,7 @@ section.work .cardWrapper .card .overlay a {
 section.work .cardWrapper .card img {
     height: 100%;
     width: 100%;
+    border-radius: 15px;
 }
 
 section.blog {
@@ -694,8 +703,9 @@ section.GitHubSkyLines {
 
 .skills__icon,
 .skills__arrow {
-    font-size: 2rem;
+    width: 2rem;
     color: var(--ternary);
+    font-size: 1.2rem;
 }
 
 .skills__icon {
@@ -781,7 +791,7 @@ section.GitHubSkyLines {
 }
 
 .skills__open .skills__arrow {
-    transform: rotate(-180deg);
+    transform: rotateX(-180deg);
 }
 
 /* Scroll Up */
@@ -830,8 +840,17 @@ section.GitHubSkyLines {
 }
 
 .qualification__icon {
-    font-size: 1.8rem;
+    width: 1.8rem;
     margin-right: 0.25rem;
+    margin-bottom: -0.4rem;
+}
+.qualification__calendar__icon{
+    width: 1rem;
+    margin-bottom: -0.2rem;
+}
+
+.qualification__icon.briefcase{
+    width: 1.5rem;
 }
 
 .qualification__data {
@@ -886,6 +905,7 @@ section.GitHubSkyLines {
     color: var(--primary);
 }
 
+
 .qualification__sections {
     margin: 0rem 6rem;
 
@@ -909,4 +929,5 @@ section.qualification {
 /*  */
 .fa-sun:before{
     content: "\f185";
-} 
+}
+
