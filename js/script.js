@@ -271,9 +271,12 @@ $(document).ready(function () {
             ProfileHeadline.innerText = localStorage.getItem('TextInAboutME');
             setTimeout(TextInAboutMeFunction, 5000);
         }
+        else {
+            setTimeout(addAboutMeDynamically, 1000);
+        }
     }
 
-    setTimeout(addAboutMeDynamically, 8000);
+    setTimeout(addAboutMeDynamically, 1000);
 
 
 
