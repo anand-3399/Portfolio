@@ -269,7 +269,7 @@ $(document).ready(function () {
     function addAboutMeDynamically() {
         if (localStorage.getItem('TextInAboutME') != null) {
             ProfileHeadline.innerText = localStorage.getItem('TextInAboutME');
-            setInterval(TextInAboutMeFunction, 5000);
+            setTimeout(TextInAboutMeFunction, 5000);
         }
     }
 
