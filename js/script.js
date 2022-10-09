@@ -187,7 +187,7 @@ $(document).ready(function () {
     function toggleCLasses() {
         // Add or remove the dark / icon theme
 
-        // document.body.classList.toggle(darkTheme)
+        document.body.classList.toggle(darkTheme)
         siteMainWrapper.classList.toggle(darkTheme)
         about.classList.toggle(darkTheme)
         header.classList.toggle(darkTheme)
@@ -289,6 +289,32 @@ $(document).ready(function () {
 
     // setInterval(TextInAboutMeFunction, 5000);
 
+    if (document.body.classList.contains('dark-theme')) {
+        setTimeout(function () {
+            siteMainWrapper.classList.toggle(darkTheme)
+            about.classList.toggle(darkTheme)
+            header.classList.toggle(darkTheme)
+            services.classList.toggle(darkTheme)
+            skills.classList.toggle(darkTheme)
+            qualification.classList.toggle(darkTheme)
+            freeLancer.classList.toggle(darkTheme)
+            reviews.classList.toggle(darkTheme)
+            work.classList.toggle(darkTheme)
+            blog.classList.toggle(darkTheme)
+            GitHubSkyLines.classList.toggle(darkTheme)
+            contact.classList.toggle(darkTheme)
+        }, 800);
 
+        setTimeout(function () {
+            try {
+                darkToggleingLinkedinBadge1()
+            }
+            catch (err) {
+                darkToggleingLinkedinBadge2()
+                console.log("Error in darkToggleingLinkedinBadge1. Hence executing darkToggleingLinkedinBadge2")
+            }
+        }, 3000);
+
+    }
 
 });
