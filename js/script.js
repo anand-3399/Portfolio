@@ -171,6 +171,17 @@ $(document).ready(function () {
 
     }
 
+    // Function To Execute our Dark Mode Toggleing in Linkedin Badge
+    function trydarkToggleingLinkedinBadge() {
+        try {
+            darkToggleingLinkedinBadge1()
+        }
+        catch (err) {
+            darkToggleingLinkedinBadge2()
+            console.log("Error in darkToggleingLinkedinBadge1. Hence executing darkToggleingLinkedinBadge2")
+        }
+    }
+
 
 
 
@@ -201,13 +212,7 @@ $(document).ready(function () {
         GitHubSkyLines.classList.toggle(darkTheme)
         contact.classList.toggle(darkTheme)
 
-        try {
-            darkToggleingLinkedinBadge1()
-        }
-        catch (err) {
-            darkToggleingLinkedinBadge2()
-            console.log("Error in darkToggleingLinkedinBadge1. Hence executing darkToggleingLinkedinBadge2")
-        }
+        trydarkToggleingLinkedinBadge()
 
         themeButton.classList.toggle(iconTheme)
         themeButton1.classList.toggle(iconTheme)
@@ -289,6 +294,12 @@ $(document).ready(function () {
 
     // setInterval(TextInAboutMeFunction, 5000);
 
+    function localToggleing() {
+        setTimeout(function () {
+            trydarkToggleingLinkedinBadge()
+        }, 3000);
+    }
+
     if (document.body.classList.contains('dark-theme')) {
         setTimeout(function () {
             siteMainWrapper.classList.toggle(darkTheme)
@@ -305,16 +316,13 @@ $(document).ready(function () {
             contact.classList.toggle(darkTheme)
         }, 800);
 
-        setTimeout(function () {
-            try {
-                darkToggleingLinkedinBadge1()
-            }
-            catch (err) {
-                darkToggleingLinkedinBadge2()
-                console.log("Error in darkToggleingLinkedinBadge1. Hence executing darkToggleingLinkedinBadge2")
-            }
-        }, 3000);
-
+        try {
+            localToggleing()
+        } catch(err) {
+            console.log("Error in localToggleing")
+        }
     }
+
+
 
 });
