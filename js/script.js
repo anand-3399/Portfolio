@@ -6,7 +6,21 @@ $(document).ready(function () {
         dotsClass: 'dots',
         autoplay: true,
         autoplaySpeed: 60000,
+        adaptiveHeight: true,
+        
     });
+
+    const slider = $(".slider");
+
+    slider.on('wheel', (function (e) {
+        e.preventDefault();
+
+        if (e.originalEvent.deltaY < 0) {
+            $(this).slick('slickPrev');
+        } else {
+            $(this).slick('slickNext');
+        }
+    }));
 
     // Doing Responsive from here
     let hamburger = document.querySelector('.hamburger');
@@ -318,7 +332,7 @@ $(document).ready(function () {
 
         try {
             localToggleing()
-        } catch(err) {
+        } catch (err) {
             console.log("Error in localToggleing")
         }
     }

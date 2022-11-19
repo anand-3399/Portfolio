@@ -10,7 +10,7 @@
     justify-content: space-between;
 }
 
-.btn{
+.btn {
     padding: 0.8rem 3rem;
     font-size: 1rem;
     font-weight: 600;
@@ -21,20 +21,23 @@
     transition: .3s ease-in;
 }
 
-.btn-primary,.btn-secondary:hover{
-    background:var(--primary);
+.btn-primary,
+.btn-secondary:hover {
+    background: var(--primary);
     color: var(--dark);
 }
 
-.btn-primary:hover,.btn-secondary{
+.btn-primary:hover,
+.btn-secondary {
     background-color: transparent;
     border-color: var(--primary);
     color: var(--primary);
 }
 
-.flex-1{
+.flex-1 {
     flex: 1;
 }
-.justify-center{
+
+.justify-center {
     justify-content: center;
 }
