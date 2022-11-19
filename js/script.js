@@ -5,7 +5,7 @@ $(document).ready(function () {
         appendDots: '.sliderDots',
         dotsClass: 'dots',
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 60000,
     });
 
     // Doing Responsive from here
