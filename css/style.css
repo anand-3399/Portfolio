@@ -14,7 +14,7 @@
     --primary: #3DCFD3;
     --dark: #0d0d0d;
     --pure: #ffff;
-    --ternary: #898989;
+    --ternary: #3b3b3b;
     --light: #f2f2f2;
     --secondary: #070606;
 }
@@ -168,6 +168,8 @@ section.services.dark-theme .cardWrapper .card p,
 section.Skills.dark-theme .sectionHeading+p,
 section.Skills.dark-theme .skills__subtitle,
 section.qualification.dark-theme .sectionHeading+p,
+section.qualification.dark-theme .qualification__subtitle,
+section.qualification.dark-theme .qualification__calendar,
 section.reviews.dark-theme .sectionHeading+p,
 section.reviews.dark-theme .slider .slide p,
 section.work.dark-theme .sectionHeading+p,
@@ -178,16 +180,15 @@ section.contact.dark-theme .cardWrapper .card h6 {
     color: #e2d1d1;
 }
 
-section.services.dark-theme .cardWrapper .card {
-    /* background: linear-gradient(to right, #00ffdc, #00ccff); */
-    /* background-color: var(--secondary); */
-}
+/* section.services.dark-theme .cardWrapper .card {
+    background: linear-gradient(to right, #00ffdc, #00ccff);
+    background-color: var(--secondary);
+} */
 
-section.services.dark-theme .cardWrapper .card:hover {
-    /* background: transparent; */
-    /* background: linear-gradient(to right, #00ffdc, #00ccff); */
-
-}
+/* section.services.dark-theme .cardWrapper .card:hover {
+    background: transparent;
+    background: linear-gradient(to right, #00ffdc, #00ccff);
+} */
 
 section.contact.dark-theme input,
 section.contact.dark-theme .inputWrap-2 textarea {
@@ -666,7 +667,7 @@ footer .footerSocials a i {
 
 footer .Copyright {
     margin-top: 2rem;
-    color: var(--ternary);
+    color: whitesmoke;
 }
 
 section.GitHubSkyLines .container .render-viewer {
@@ -844,12 +845,13 @@ section.GitHubSkyLines {
     margin-right: 0.25rem;
     margin-bottom: -0.4rem;
 }
-.qualification__calendar__icon{
+
+.qualification__calendar__icon {
     width: 1rem;
     margin-bottom: -0.2rem;
 }
 
-.qualification__icon.briefcase{
+.qualification__icon.briefcase {
     width: 1.5rem;
 }
 
@@ -921,13 +923,12 @@ section.qualification {
 }
 
 /* --------------------- */
-.linkedinBadgeFrame{
+.linkedinBadgeFrame {
     width: -webkit-fill-available;
     height: 18rem;
 }
 
 /*  */
-.fa-sun:before{
+.fa-sun:before {
     content: "\f185";
 }
-
