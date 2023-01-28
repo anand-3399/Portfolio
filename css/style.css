@@ -394,8 +394,10 @@ section.services .cardWrapper .card:hover p {
 
 section.freeLancer {
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../image/camera.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../image/camera%20Small.png);
     /*Last value 0.7 is for opacity and if we are doing this, it is easier to overlay the image*/
+    background-size: cover;
+    background-repeat: no-repeat;
 
     color: var(--pure);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 65% 80%, 0 100%);
@@ -527,6 +529,10 @@ section.blog {
 
 section.blog .sectionHeading {
     color: var(--pure);
+}
+
+section.blog .container p{
+    color: var(--light);
 }
 
 section.blog .cardWrapper {
@@ -768,11 +774,23 @@ section.GitHubSkyLines {
 }
 
 .skills__js {
+    width: 70%;
+}
+
+.skills__react {
     width: 50%;
 }
 
 .skills__php {
     width: 60%;
+}
+
+.skills__node {
+    width: 30%;
+}
+
+.skills__mongo {
+    width: 50%;
 }
 
 .skills__python,
@@ -931,4 +949,9 @@ section.qualification {
 /*  */
 .fa-sun:before {
     content: "\f185";
+}
+
+/* For 000webhostapp */
+img[alt="www.000webhost.com"]{
+    display: none;
 }

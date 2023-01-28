@@ -7,7 +7,7 @@ $(document).ready(function () {
         autoplay: true,
         autoplaySpeed: 60000,
         adaptiveHeight: true,
-        
+
     });
 
     const slider = $(".slider");
@@ -223,10 +223,8 @@ $(document).ready(function () {
         reviews.classList.toggle(darkTheme)
         work.classList.toggle(darkTheme)
         blog.classList.toggle(darkTheme)
-        GitHubSkyLines.classList.toggle(darkTheme)
         contact.classList.toggle(darkTheme)
 
-        trydarkToggleingLinkedinBadge()
 
         themeButton.classList.toggle(iconTheme)
         themeButton1.classList.toggle(iconTheme)
@@ -237,6 +235,10 @@ $(document).ready(function () {
         localStorage.setItem('selected-theme', getCurrentTheme())
         localStorage.setItem('selected-icon', getCurrentIcon())
         localStorage.setItem('selected-icon', getCurrentIcon1())
+
+        // May cause error due to API restrictions
+        GitHubSkyLines.classList.toggle(darkTheme)
+        trydarkToggleingLinkedinBadge()
     }
 
     // Qualifications
@@ -262,7 +264,15 @@ $(document).ready(function () {
     const scriptURL = 'https://script.google.com/macros/s/AKfycbyK6xX6650VW1bgDuz8KD91XnLM-OHSmwcRaY0QOrnwHj5zPRUArpgS2SXqexc-x22Exg/exec'
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById('msg');
-
+    
+    // Get Current Date and Time
+    const date = new Date();
+    const date1 = date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
+    const timeIn12HrFormat = date.getHours() % 12 || 12;
+    const ampm = (date.getHours() < 12 || date.getHours() == 0) ? "AM" : "PM";
+    const time1 = timeIn12HrFormat + ":" + date.getMinutes() + ":" + date.getSeconds() + " " + ampm;
+    const dateTime = date1 + " " + time1;
+    console.log(dateTime);
 
 
     form.addEventListener('submit', e => {
@@ -326,8 +336,10 @@ $(document).ready(function () {
             reviews.classList.toggle(darkTheme)
             work.classList.toggle(darkTheme)
             blog.classList.toggle(darkTheme)
-            GitHubSkyLines.classList.toggle(darkTheme)
             contact.classList.toggle(darkTheme)
+            addSpinningFeature()
+
+            GitHubSkyLines.classList.toggle(darkTheme)
         }, 800);
 
         try {

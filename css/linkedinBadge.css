@@ -83,3 +83,8 @@ iframe {
         top: 25rem;
     }
 }
+
+/* For 000webhostapp */
+img[alt="www.000webhost.com"]{
+    display: none;
+}
