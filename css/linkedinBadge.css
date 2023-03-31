@@ -52,6 +52,16 @@ iframe {
     top: 14rem;
 }
 
+.profile-badge__content-profile-company-school-info-link--dark:hover,
+.profile-badge__content-profile-company-school-info-link--dark:active {
+    color: black !important;
+    text-decoration: underline;
+}
+
+.profile-badge__content-profile-company-school-info-link {
+    font-size: 1.5rem !important;
+}
+
 /* Responsive */
 @media (max-width: 576px) {
     .profile-badge {
@@ -85,6 +95,6 @@ iframe {
 }
 
 /* For 000webhostapp */
-img[alt="www.000webhost.com"]{
+img[alt="www.000webhost.com"] {
     display: none;
 }

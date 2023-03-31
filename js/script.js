@@ -237,8 +237,8 @@ $(document).ready(function () {
         localStorage.setItem('selected-icon', getCurrentIcon1())
 
         // May cause error due to API restrictions
-        GitHubSkyLines.classList.toggle(darkTheme)
         trydarkToggleingLinkedinBadge()
+        GitHubSkyLines.classList.toggle(darkTheme)
     }
 
     // Qualifications
@@ -265,16 +265,6 @@ $(document).ready(function () {
     const form = document.forms['submit-to-google-sheet']
     const msg = document.getElementById('msg');
     
-    // Get Current Date and Time
-    const date = new Date();
-    const date1 = date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
-    const timeIn12HrFormat = date.getHours() % 12 || 12;
-    const ampm = (date.getHours() < 12 || date.getHours() == 0) ? "AM" : "PM";
-    const time1 = timeIn12HrFormat + ":" + date.getMinutes() + ":" + date.getSeconds() + " " + ampm;
-    const dateTime = date1 + " " + time1;
-    console.log(dateTime);
-
-
     form.addEventListener('submit', e => {
         e.preventDefault()
         fetch(scriptURL, { method: 'POST', body: new FormData(form) })
@@ -311,12 +301,12 @@ $(document).ready(function () {
 
 
 
-    // setTimeout(function () {
-    //     ProfileHeadline.innerText = localStorage.getItem('TextInAboutME');
-    //     // localStorage.removeItem('TextInAboutME');
-    // }, 6000);
+    setTimeout(function () {
+        ProfileHeadline.innerText = localStorage.getItem('TextInAboutME');
+        // localStorage.removeItem('TextInAboutME');
+    }, 6000);
 
-    // setInterval(TextInAboutMeFunction, 5000);
+    setInterval(TextInAboutMeFunction, 5000);
 
     function localToggleing() {
         setTimeout(function () {
