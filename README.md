@@ -5,6 +5,15 @@
   <img src="DesignOfPortfolio-DarkTheme.png"style="width: 16rem;">
 </div>
 
+## Note:
+
+- This is a simple portfolio design using HTML, CSS, and JavaScript.
+- This is a responsive design of the portfolio.
+- It has light and dark theme modes.
+- LinkedIn badges and GitHub Skylines are added to the portfolio.
+- LinkedIn badges will only appear if you have a LinkedIn account and logged in to it.
+
+
 ## ✍️ Authors
 - [Anand Jaiswar](https://github.com/anand-3399)
 

@@ -282,7 +282,8 @@ $(document).ready(function () {
     // Setting the headline dynamically
     var ProfileHeadline = document.getElementById('myProfileHeadlineAndCurrentPosition');
     function TextInAboutMeFunction() {
-        ProfileHeadline.innerText = localStorage.getItem('TextInAboutME');
+        if (localStorage.getItem('TextInAboutME') != null) 
+            ProfileHeadline.innerText = localStorage.getItem('TextInAboutME');
     }
 
     function addAboutMeDynamically() {
@@ -296,17 +297,6 @@ $(document).ready(function () {
     }
 
     setTimeout(addAboutMeDynamically, 1000);
-
-
-
-
-
-    setTimeout(function () {
-        ProfileHeadline.innerText = localStorage.getItem('TextInAboutME');
-        // localStorage.removeItem('TextInAboutME');
-    }, 6000);
-
-    setInterval(TextInAboutMeFunction, 5000);
 
     function localToggleing() {
         setTimeout(function () {
